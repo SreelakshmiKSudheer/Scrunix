@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrunix Login Page</title>
+    <title>exam-home</title>
     <link rel="stylesheet" href="style/login.css">
+    <script src="script/login.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -12,21 +13,24 @@
         <ul class="menu">
             <li><a href="student-home.html" class="menu-link">Home</a></li>
             <li><a href="Announcements.html" class="menu-link">Announcements</a></li>
-            <li><a href="exam-home.html" class="menu-link">Exams</a></li>
+            <li><a href="#" class="menu-link">Exams</a></li>
         </ul>
     </div>
     <div class="main-content">
         <div class="navbar">
-            <span class="navs">LOGIN</span>
+            <div class="navs">
+                <span >HOME</span>
+                <span >ANNOUNCEMENTS</span>
+                <span >EXAMS</span>
+            </div>
             <div class="icons">
                 <div class="bell"><img src="images/bell.png" alt="notification" width="30px"></div>
                 <div class="profile-icon"></div>
             </div>
         </div>
-        <div class="login-form">
-            <form>
-                <label for="college">College   </label>
-                <select name="college" id="college"> 
+        <div class="drops">
+            <label for="year">Year :  </label>
+                <select name="year" id="year"> 
                     <option value="" disabled selected>Select your college</option>
                     <option value="rit">Rajiv Gandhi Institute of Technology, Kottayam</option>
                     <option value="cet">College of Engineering Trivandrum</option>
@@ -34,16 +38,7 @@
                     <option value="gck">Govt. Engineering College, Kannur</option>
                     
                 </select>
-                
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username">
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
-                
-                <button type="submit">Login</button>
-            </form>
-            <a href="#" class="existing-user">Not a User?</a>
+
         </div>
     </div>
 </body>
